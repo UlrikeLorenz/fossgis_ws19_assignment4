@@ -6,7 +6,7 @@ import grass.script as gscript
 
 def main():
     
-    '''
+    
     #set path
     corine_path = 'C:/Users/Ulrike/Desktop/Studium Heidelberg/1. Semester/FOSSGIS/fossgis_ws19_assignment4/assignment4_data/assignment4_data/corine_landcover_2018/CLC2018_tarragona.tif'
     #print region
@@ -93,7 +93,7 @@ def main():
     gscript.run_command('r.reclass', overwrite=True, input='distance_firestations', output='Reclass_distFirestations', rules='C:/Users/Ulrike/Desktop/Studium Heidelberg/1. Semester/FOSSGIS/fossgis_ws19_assignment4/rules_reclassification_distFirestationstxt.txt')
     gscript.run_command('r.resample', overwrite=True, input='Reclass_distFirestations', output='Reclass_distFirestations_per')
 
-    '''
+    
 
     #BONUS    #isochrones are gained by openroutservice and coordinates gained by a python script called BONUS.py
     gscript.run_command('v.import', overwrite=True, input='C:/Users/Ulrike/Desktop/Studium Heidelberg/1. Semester/FOSSGIS/fossgis_ws19_assignment4/Isochrones_openrouteservice_n.geojson', output='isochrones')
